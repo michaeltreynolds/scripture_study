@@ -142,7 +142,7 @@ This analysis was conducted over multiple iterative sessions, each building on t
 - **Approach:** Used OpenAI's `text-embedding-3-small` model to embed all 65 prophecy texts and all relevant Book of Mormon verses, then computed cosine similarity to find semantic matches above a 0.35 threshold. This surfaced 975 candidate matches.
 - **Scripts:**
   - `embedding_search.py` — embeds prophecies and verses using OpenAI API, computes cosine similarity, outputs `v4_embedding_results.json` and `v4_embedding_results.md`.
-- **API Key:** Loaded from `config.secret.json` (OpenAI API).
+- **API Key:** Loaded from the `OPENAI_API_KEY` environment variable.
 - **Output:** `fulfillment_mapping_v4.md` — combined V3 + V4 findings with 🆕/⬆️ markers for new discoveries.
 - **Key discoveries:** Jaredite parallels (Ether 14:1, 15:19), Christ as doctrinal commentator (3 Nephi 13, 14, 24), Alma 34:35 as doctrinal bridge for A18.
 
